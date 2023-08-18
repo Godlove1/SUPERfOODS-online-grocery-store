@@ -145,9 +145,9 @@ echo "<div class='text-red-500'>Image not Added.</div>";
                     ?>
                     </td>
 
-                    <td class="w-20">
-<a href="update-prod?id=<?php echo $id; ?>" class="w-full text-center rounded bg-green-500 hover:bg-green-700 p-2 "><i class="fa-solid fa-pen-to-square text-xl text-white"></i></a>
-<a  onclick="return confirm('Are you sure you want to delete <?php echo $title; ?>?');" href="delete?id=<?php echo $id; ?>&images=<?php echo $prod_imgs; ?>" class=" w-full text-center rounded bg-red-500 hover:bg-red-700 p-2"><i class="fa-solid fa-trash-can text-xl text-white"></i></a>
+                    <td class="flex justify-between items-center lg:w-20">
+<a href="update-prod?id=<?php echo $id; ?>" class="w-1/2 text-center bg-green-500 hover:bg-green-700 p-2 "><i class="fa-solid fa-pen-to-square text-xl text-white"></i></a>
+<a  onclick="return confirm('Are you sure you want to delete <?php echo $title; ?>?');" href="delete?id=<?php echo $id; ?>&images=<?php echo $prod_imgs; ?>" class=" w-1/2 text-center  bg-red-500 hover:bg-red-700 p-2"><i class="fa-solid fa-trash-can text-xl text-white"></i></a> 
                     </td>
 
                 </tr>
