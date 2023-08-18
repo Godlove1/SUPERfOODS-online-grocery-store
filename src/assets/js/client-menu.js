@@ -25,18 +25,19 @@ const closeNav=()=>{
         search_bar.style.height="0";
     }
 
-
-  // Show the spinner when the page starts loading
-window.addEventListener('loadstart', function() {
-  document.getElementById('spinner').classList.remove('hidden');
-});
-
-// Hide the spinner after 3 seconds
-window.addEventListener('load', function() {
-  setTimeout(function() {
-    document.getElementById('spinner').classList.add('hidden');
-  }, 3000);
-});
+// Show the spinner when the page starts loading
+var spinner = document.getElementById('spinner');
+spinner.classList.add('hidden');
+function showSpinner() {
+  spinner.classList.remove('hidden');
+}
+function hideSpinner() {
+  spinner.classList.add('hidden');
+}
+// Add event listener to show the spinner when the page starts loading
+window.addEventListener('loadstart', showSpinner);
+// Add event listener to hide the spinner when the page has finished loading
+window.addEventListener('load', hideSpinner);
 
 
   // Get all the input groups on the page

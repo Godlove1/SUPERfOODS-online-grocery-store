@@ -75,7 +75,7 @@
                  <!-- cta_2 -->
                  <div class="cta w-1/3">
                     <div class="ctar w-full">
-         <button type="submit" class="w-full flex justify-center items-center bg-[#0DA586] p-2 font-bold text-white rounded-tr-md rounded-br-md"><i class="fa-solid fa-bag-shopping text-xl"></i></button>
+         <button id="increment" type="submit" class="w-full flex justify-center items-center bg-[#0DA586] p-2 font-bold text-white rounded-tr-md rounded-br-md"><i class="fa-solid fa-bag-shopping text-xl"></i></button>
                     </div>
                 </div>
 
@@ -85,7 +85,9 @@
                     <label for="Quantity" class="sr-only"> Quantity </label>
                 
                     <div class="input-group flex items-center border border-gray-200 rounded">
-         <button  type="button" class="decrement-button w-8 bg-red-100 rounded  transition hover:opacity-75">
+         <button  type="button" 
+         id="MinusTitle"
+         class="decrement-button w-8 bg-red-100 rounded  transition hover:opacity-75">
                         &minus;
                     </button>
                 
@@ -100,6 +102,7 @@
                 <!-- add leading-10 to add padding -->
                     <button
                         type="button"
+                        id="buttonIncremetal" title="increment quantity"
                         class="increment-button w-8 bg-red-100 rounded  transition hover:opacity-75">
                         &plus;
                     </button>

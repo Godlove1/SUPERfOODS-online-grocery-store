@@ -41,7 +41,7 @@ if (isset($_GET['page_no']) && $_GET['page_no']!="") {
 <div class="flex justify-around items-center flex-wrap mb-8 p-4 ">
  <!-- category template -->
  <div class="cat-temp-wrapper relative border shadow-lg  w-[100px] h-[100px] rounded-full overflow-hidden">
-    <a href="shop">
+    <a href="shop" title="shop all Categories from superFood">
         <div class="cat-bg w-full h-full">
             <img src="https://images.pexels.com/photos/9609868/pexels-photo-9609868.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" class="w-full h-full object-cover">
         </div>
@@ -68,7 +68,7 @@ foreach ($db->query($get_cats) as $cats) {
 
     <!-- category template -->
     <div class="hvr-grow-rotate cat-temp-wrapper relative <?=($acat == $cid)?'border-red-500':''?> border  shadow-lg  w-[100px] h-[100px] rounded-full overflow-hidden">
-        <a href="shop?cat=<?php echo $cid;?>">
+        <a href="shop?cat=<?php echo $cid;?>" title="shop more of <?php echo ucwords($cname) ?> from superFood">
         <div class="cat-bg w-full h-full ">
       <img src="assets/images/cats/<?php echo $ca_i;?>" alt="<?php echo ucwords($cname) ?>" class="w-full h-full object-cover">
             </div>
@@ -92,7 +92,7 @@ foreach ($db->query($get_cats) as $cats) {
 ?>
     <!-- cateogry template -->
     <div class="hvr-grow-rotate cat-temp-wrapper relative <?=($acat == $cid)?'border-red-500':''?> border  shadow-lg  w-[100px] h-[100px] rounded-full overflow-hidden">
-        <a href="shop?cat=<?php echo $cid;?>">
+        <a href="shop?cat=<?php echo $cid;?>" title="shop more of <?php echo ucwords($cname) ?> from superFood">
         <div class="cat-bg w-full h-full ">
       <img src="assets/images/cats/<?php echo $ca_i;?>" alt="<?php echo ucwords($cname) ?>" class="w-full h-full object-cover">
             </div>

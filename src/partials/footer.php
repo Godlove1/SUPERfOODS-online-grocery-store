@@ -3,6 +3,23 @@
 </script>
 <!-- scripts -->
 <script src="assets/js/client-menu.js"></script>
+
+
+   <!-- Custom install button -->
+ <div id="install-button" class="hidden fixed bottom-0 w-full z-50 cursor-pointer">
+ <div class="w-full flex justify-center text-white items-center rounded-lg p-6">
+<div class="bg-teal-500 w-full lg:w-1/2 flex flex-col justify-center p-2 text-white items-center rounded-lg">
+
+     <h3 class="text-xl font-bold border-b border-dashed mb-2">SuperFood App</h3>
+    <p class="text-sm text-center">
+    Shop your favorite groceries and spices at the comfort of your home.😎
+    </p>
+<button id="installAppNow" title="Install the superFood App" class="bg-white w-1/2 rounded-lg p-2 mt-4 text-teal-600">Install Now</button>
+</div>
+</div>
+</div>
+
+
 <!-- FOOTER -->
 <footer class="w-full px-8">
 
@@ -96,7 +113,8 @@ foreach ($db->query($get_cats) as $cats) {
   
 </footer>
 
-<!-- lazy loading images -->
+<!-- scripts -->
+<script src="assets/js/app.js"></script>
 <script src="assets/js/lazy-load.js"></script>
 <script src="assets/js/slider.js"></script>
 </body>

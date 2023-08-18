@@ -12,7 +12,7 @@
                <br> <br> With our innovative online ordering and delivery service, you can enjoy the ultimate grocery shopping experience from the comfort of your own home.
               </p>
             <div class="ctama w-full flex justify-center items-center">
-                <a class="hvr-push w-1/2 md:w-auto mb-4  p-2 text-sm font-bold lg:text-4xl uppercase border-2 border-transparent bg-[#0DA586] rounded hover:bg-red-100 hover:text-[#0DA586] text-white transition duration-300 text-center"
+                <a title="what are you waiting for?. buy now" class="hvr-push w-1/2 md:w-auto mb-4  p-2 text-sm font-bold lg:text-4xl uppercase border-2 border-transparent bg-[#0DA586] rounded hover:bg-red-100 hover:text-[#0DA586] text-white transition duration-300 text-center"
                 href="shop">Order Now😋!</a>
             </div>
             </div>

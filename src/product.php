@@ -133,7 +133,7 @@ if ($result->num_rows > 0) {
                     <p class="mr-2 my-4">Quantity : </p>
                     <label for="Quantity" class="sr-only"> Quantity </label>
                     <div class="input-group flex items-center my-4">
-         <button  type="button" class="decrement-button w-10 bg-red-100 rounded  transition hover:opacity-75">
+         <button id="okadd" type="button" class="decrement-button w-10 bg-red-100 rounded  transition hover:opacity-75">
                         &minus;
                     </button>
                 
@@ -163,7 +163,7 @@ $productImage = "https://superfoods.store/assets/images/products/".$prod_img[0];
 $messageURL = "https://wa.me/{$phoneNumber}?text=Hi!,%20I%20will%20like%20to%20buy%20{$name}%20%0A%0Aimage:%0A{$productImage}"; 
  
 // output the WhatsApp share button with the product image 
-echo "<a href='{$messageURL}' target='_blank'  class='hvr-bounce-to-right text-sm flex justify-center items-center bg-black p-2 text-white rounded-tl-md rounded-bl-md'>
+echo "<a title='contact us directly to buy just this product' href='{$messageURL}' target='_blank'  class='hvr-bounce-to-right text-sm flex justify-center items-center bg-black p-2 text-white rounded-tl-md rounded-bl-md'>
 <p>Buy Now </p><i class='fa-brands fa-whatsapp ml-2'></i>
 </a>"; 
 ?>
@@ -171,7 +171,7 @@ echo "<a href='{$messageURL}' target='_blank'  class='hvr-bounce-to-right text-s
                  <!-- cta_2 -->
                  <div class="cta w-1/2">
                     <div class="ctar w-full">
-         <button type="submit" class="hvr-bounce-to-top w-full flex justify-center items-center bg-[#0DA586] p-2 font-bold text-white rounded-tr-md rounded-br-md"><i class="fa-solid fa-bag-shopping text-xl"></i></button>
+         <button id="reduced" type="submit" class="hvr-bounce-to-top w-full flex justify-center items-center bg-[#0DA586] p-2 font-bold text-white rounded-tr-md rounded-br-md"><i class="fa-solid fa-bag-shopping text-xl"></i></button>
                     </div>
                 </div>
                 </div>
@@ -200,7 +200,7 @@ echo "<a href='{$messageURL}' target='_blank'  class='hvr-bounce-to-right text-s
 <div class="cat_name w-full flex justify-between items-center px-4">
     <div class="font-bold text-2xl"><h2>Others you might like</h2></div>
     <div>
-        <a href="shop" class="flex justify-center items-center font-bold">
+        <a href="shop" title="shop more of the same categories in the shop page" class="flex justify-center items-center font-bold">
             <p>More</p>
             <i class="fa-solid fa-chevron-right text-sm ml-1 font-extrabold "></i>
         </a>

@@ -3,7 +3,7 @@
 <!-- list format -->
 <div  data-aos="zoom-in-up" class="list_wrapper w-full flex items-center p-2 border-b-4 border-dashed lg:border-solid lg:border mb-2 ">
     <div class="img_container w-2/3 h-[150px]">
-      <a href="product?prod_key=<?php echo $prod_id ?>" class=" w-full h-full">
+      <a title="Buy more of <?php echo ucwords($name) ?> from superFood" href="product?prod_key=<?php echo $prod_id ?>" class=" w-full h-full">
          <img src="assets/images/icons/logo.png"
          data-src="assets/images/products/<?php echo $prod_img[0]; ?>"  
          alt="<?php echo $name; ?>" 
@@ -33,7 +33,7 @@
                     <label for="Quantity" class="sr-only"> Quantity </label>
                 
                     <div class="input-group flex items-center">
-         <button  type="button" class="decrement-button w-8 bg-red-100 rounded  transition hover:opacity-75">
+         <button id="decreaser" type="button" class="decrement-button w-8 bg-red-100 rounded  transition hover:opacity-75">
                         &minus;
                     </button>
                 
@@ -47,6 +47,7 @@
                     /> 
                 <!-- add leading-10 to add padding -->
                      <button
+                     id="addmore"
                         type="button"
                         class="increment-button w-8 bg-red-100 rounded  transition hover:opacity-75">
                         &plus;
@@ -63,7 +64,7 @@ $productImage = "https://superfoods.store/assets/images/products/".$prod_img[0];
 $messageURL = "https://wa.me/{$phoneNumber}?text=Hi!,%20I%20will%20like%20to%20buy%20{$name}%20%0A%0Aimage:%0A{$productImage}"; 
  
 // output the WhatsApp share button with the product image 
-echo "<a href='{$messageURL}' target='_blank'  class='hvr-bounce-to-right text-sm flex justify-center items-center bg-black p-2 text-white rounded-tl-md rounded-bl-md'>
+echo "<a title='Buy just .$name. from superFood' href='{$messageURL}' target='_blank'  class='hvr-bounce-to-right text-sm flex justify-center items-center bg-black p-2 text-white rounded-tl-md rounded-bl-md'>
 <p>Order </p><i class='fa-brands fa-whatsapp ml-2'></i>
 </a>"; 
 ?>
@@ -71,7 +72,7 @@ echo "<a href='{$messageURL}' target='_blank'  class='hvr-bounce-to-right text-s
                  <!-- cta_2 -->
                  <div class="cta w-1/4">
                     <div class="ctar w-full">
-         <button type="submit" class="hvr-bounce-to-top w-full flex justify-center items-center bg-[#0DA586] p-2 font-bold text-white rounded-tr-md rounded-br-md"><i class="fa-solid fa-bag-shopping text-xl"></i></button>
+         <button id="increment" type="submit" class="hvr-bounce-to-top w-full flex justify-center items-center bg-[#0DA586] p-2 font-bold text-white rounded-tr-md rounded-br-md"><i class="fa-solid fa-bag-shopping text-xl"></i></button>
                     </div>
                 </div>
                 </div>

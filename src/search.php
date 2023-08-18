@@ -48,7 +48,7 @@ if ($count > 0) {
 } else {
         echo '<div class="card w-full h-[200px] flex justify-center items-center flex-col capitalize bg-teal-500 p-6 text-white font-bold">
                     <p>'.$search.' is not yet Available.</p>
-                    <p><a href="shop" class="underline font-bold">goto shop</a> for similar products</p>
+                    <p><a href="shop" title="find more in the shop page superFood" class="underline font-bold">goto shop</a> for similar products</p>
                   </div>';
     
 }
