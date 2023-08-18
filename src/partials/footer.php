@@ -97,7 +97,7 @@ foreach ($db->query($get_cats) as $cats) {
 </footer>
 
 <!-- lazy loading images -->
-<!-- <script src="assets/js/lazy-load.js"></script> -->
+<script src="assets/js/lazy-load.js"></script>
 <script src="assets/js/slider.js"></script>
 </body>
 </html>

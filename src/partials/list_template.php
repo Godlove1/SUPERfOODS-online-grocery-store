@@ -4,7 +4,10 @@
 <div  data-aos="zoom-in-up" class="list_wrapper w-full flex items-center p-2 border-b-4 border-dashed lg:border-solid lg:border mb-2 ">
     <div class="img_container w-2/3 h-[150px]">
       <a href="product?prod_key=<?php echo $prod_id ?>" class=" w-full h-full">
-         <img src="assets/images/products/<?php echo $prod_img[0]; ?>" alt="<?php echo $name; ?>" class=" w-full h-full rounded-md">
+         <img src="assets/images/icons/logo.png"
+         data-src="assets/images/products/<?php echo $prod_img[0]; ?>"  
+         alt="<?php echo $name; ?>" 
+         class="myImage w-full h-full rounded-md">
       </a>
     </div>
     <div class="info_container w-full  pl-3">

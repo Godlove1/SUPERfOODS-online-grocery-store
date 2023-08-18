@@ -3,7 +3,10 @@
     <!-- image -->
     <div class="image_wrapper ">
         <a href="product?prod_key=<?php echo $prod_id ?>" class="relative">
-            <img src="assets/images/products/<?php echo $prod_img[0]; ?>" alt="">
+         <img src="assets/images/icons/logo.png"
+            data-src="assets/images/products/<?php echo $prod_img[0]; ?>"
+             alt="<?php echo $name ?>" 
+            class="myImage">
 
              <!-- category -->
         <div class="category_name absolute bottom-2 right-2 ">
