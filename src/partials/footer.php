@@ -10,9 +10,9 @@
 
 <div class="about_superfood text-gray-500">
   <div class="c_logo">
-    <img src="assets/images/logo.png" alt="superfoods logo" class="w-[20%]">
+    <img src="assets/images/icons/logo.png" alt="superfoods logo" class="w-1/2">
   </div>
-  <div class="desc_text">
+  <div class="desc_text text-sm ">
     <p>
      Join us on this flavorful journey and experience the joy of cooking with our premium spices. Get ready to elevate your dishes to new heights and bring a dash of excitement to your kitchen. At superFood, we're here to make your culinary dreams come true, one spice at a time!
     </p>
@@ -31,7 +31,7 @@
   <div class="header_title">
     <h3 class="font-bold text-xl">Categories</h3>
   </div>
-  <ul class="footer_cats text-gray-500">
+  <ul class="footer_cats text-gray-500 text-sm ">
 
 <?php
 $get_cats="SELECT * FROM tbl_category order by id ASC";
@@ -50,7 +50,7 @@ foreach ($db->query($get_cats) as $cats) {
   <div class="header_title">
    <h3 class="font-bold text-xl">Useful Links</h3>
   </div>
-  <ul class="footer_cats text-gray-500">
+  <ul class="footer_cats text-gray-500 text-sm">
 
    <li class='my-1'><a href="index" class="hover:text-[#0DA586] relative inline-block">Home</a></li>
    <li class='mb-1'><a href="shop" class="hover:text-[#0DA586] relative inline-block">Shop</a></li>
@@ -82,8 +82,8 @@ foreach ($db->query($get_cats) as $cats) {
 </div>
 
 <div class="credits">
-  <div class="collect text-gray-500 text-sm text-center lg:flex justify-around items-center">
-    <p>&copy;2023 SuperFoods All rights reserved</p>
+  <div class="collect text-gray-500 text-xs lg:text-sm text-center lg:flex justify-around items-center">
+    <p>&copy; <?php echo date('Y'); ?> SuperFoods All rights reserved</p>
      <p class="my-2">Stay Connected : <span>
       <a href=""><i class="fa-brands fa-facebook"></i></a>
       <a href="" class="mx-2"><i class="fa-brands fa-square-whatsapp"></i></a>

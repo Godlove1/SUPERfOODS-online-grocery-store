@@ -1,7 +1,7 @@
 <section>
         <div class="mx-auto max-w-screen-2xl px-4 py-8 sm:px-6 lg:px-8">
           <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
-            <div class="bg-red-600 lg:p-8 md:p-12 lg:px-16 lg:py-24 py-2">
+            <div class="bg-[#e3b911] lg:p-8 md:p-12 lg:px-16 lg:py-24 py-2">
               <div class="mx-auto max-w-xl text-center">
                 <h2 class="text-2xl font-bold text-white md:text-3xl">
                Save Time, Stress & Money

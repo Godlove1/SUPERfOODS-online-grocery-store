@@ -83,7 +83,10 @@ if ($result->num_rows > 0) {
           id="main-image"
       />
 
-      <div class="product__slider-wrap">
+     <?php
+        if(count($image_names)>1){
+            ?>
+         <div class="product__slider-wrap">
           <div class="product__slider">
 <?php
           foreach ($image_names as $image_name) {
@@ -100,6 +103,10 @@ if ($result->num_rows > 0) {
              
           </div>
       </div>
+            <?php
+        }
+     ?>
+
   </div>
 </div>
 <!-- shopping details -->
@@ -107,7 +114,8 @@ if ($result->num_rows > 0) {
 <p class="price text-2xl mt-4 font-bold border border-black p-2"><?php echo number_format($price ,1);?><span class="text-sm"> FCFA</span></p>
 </div>
 
- <div class="my-4 p-4 capitalize border border-dashed border-gray-500">
+ <div class="desc_wrapper w-full p-4">
+     <div class="my-4 p-4 capitalize border border-dashed border-gray-500">
  <p><?php 
  if(!empty($desc)){
     echo $desc ;
@@ -116,13 +124,15 @@ if ($result->num_rows > 0) {
  }
  ?></p>
   </div>
+ </div>
 
       <div class="add_cart mb-12 w-full flex justify-center items-center">
           <form  method="post" class="form-item  w-1/2">
         <!-- quantity -->
                 <div class="my-2 flex justify-end">
+                    <p class="mr-2 my-4">Quantity : </p>
                     <label for="Quantity" class="sr-only"> Quantity </label>
-                    <div class="input-group flex items-center">
+                    <div class="input-group flex items-center my-4">
          <button  type="button" class="decrement-button w-10 bg-red-100 rounded  transition hover:opacity-75">
                         &minus;
                     </button>

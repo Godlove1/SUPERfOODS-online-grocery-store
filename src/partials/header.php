@@ -12,7 +12,7 @@ include 'cart_process.php';
 <link rel="stylesheet" href="assets/css/custom.css">
 <link rel="stylesheet" href="assets/css/hover.css">
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-<link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon.ico">
+<link rel="icon" type="image/png" sizes="48x48" href="assets/images/icons/maskable_icon_x48.png">
 <!-- font-awesome -->
 <script src="https://kit.fontawesome.com/3ecb4095fb.js" crossorigin="anonymous"></script>
 
@@ -24,7 +24,7 @@ include 'cart_process.php';
 
  
 <!-- dynamic header -->
-<!-- <?php
+ <?php
     $url = $_SERVER['REQUEST_URI'];
 $parts = parse_url($url);
 $str = $parts['path'];
@@ -33,51 +33,62 @@ $str = $parts['path'];
 $cur_page = substr($str,strrpos($str,"/")+1);
 
 if($cur_page == 'product'){
-  ?> -->
+  ?> 
  
 <!-- SEO -->
-<title><?php  echo $name; ?></title>
-<meta name="description" content="Buy <?php  echo $name; ?>  from SuperFoods ">
+<title>Buy <?php  echo $name; ?> From superFood</title>
+<meta name="description" content="Buy <?php  echo $name; ?>  from SuperFoods and have it delivered to your doorstep">
  <link rel="canonical" href="https://www..store/product?prod_key=<?php echo $prod_id; ?>">
  <!-- SEO - Social -->
-<meta property="og:site_name" content="Super Foods">
+<meta property="og:site_name" content="Buy <?php  echo $name; ?> From superFood">
 <meta property="og:url" content="https://www.superfoods.store/product?prod_key=<?php echo $prod_id; ?>">
 <meta property="og:title" content="<?php echo $name; ?>">
 <meta property="og:type" content="product">
-<meta property="og:description" content="Buy <?php echo $name; ?> from Super Foods.">
-
-  <meta property="og:price:amount" content="<?php  echo number_format($price,2); ?>">
-  <meta property="og:price:currency" content="FCFA">
-
-<meta property="og:image" content="https://www..store/assets/images/products/<?php echo $prod_img[0] ?>">
-<meta property="og:image" content="https://www..store/assets/images/products/<?php echo $prod_img[0] ?>">
+<meta property="og:description" content="Buy <?php echo $name; ?> from Super Foods and have it delivered to your doorstep.">
+<meta property="og:price:amount" content="<?php  echo number_format($price,2); ?>">
+<meta property="og:price:currency" content="FCFA">
 <meta property="og:image" content="https://www..store/assets/images/products/<?php echo $prod_img[0] ?>">
 <meta property="og:image:secure_url" content="https://www..store/assets/images/products/<?php echo $prod_img[0] ?>">
-
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="<?php echo $name; ?>">
 <meta name="twitter:description" content="Buy <?php echo $name; ?> from Super Foods.">
 <meta name="keywords" content="<?php echo $seo; ?>">
 
 <?php
-    }else{
+    }else if($cur_page == 'shop'){
         ?>
 
-<title>Super Foods </title> 
-       <link rel="canonical" href="https://www.superfood.store/"> 
+<title> Shop | Shop the best groceries! </title> 
 <!-- SEO -->
-<meta name="keywords" content="">
-<meta name="description" content="The secret ingredient to deliciousness: Our premium powdered spices.">
+<meta name="keywords" content="Fresh produce, Organic groceries, Exotic spices, Pantry essentials, Local products, Seasonal specials, Bulk buying, Gourmet ingredients, Healthy snacks, Gluten-free options, International flavors, Cooking oils and sauces, Baking supplies, Beverages, Canned and packaged goods, Condiments and spreads, Snacks and treats, Dairy and eggs, Frozen foods, Household supplies, Customer reviews for online grocery stores in Cameroon, Fast and reliable grocery delivery in Cameroon, Fresh food in Cameroon at your doorstep.">
+<meta name="description" content="A Dash of Convenience, a Pinch of Delight: Grocery and Spice Made Right!">
  <!-- SEO - Social -->
 <meta property="og:site_name" content="Super Foods ">
 <meta property="og:url" content="https://www.superfood.store/">
 <meta property="og:title" content="Super Foods">
 <meta property="og:type" content="website">
-<meta property="og:description" content="The secret ingredient to deliciousness: Our premium powdered spices.">
-
+<meta property="og:description" content="A Dash of Convenience, a Pinch of Delight: Grocery and Spice Made Right!.">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Super Foods">
-<meta name="twitter:description" content="The secret ingredient to deliciousness: Our premium powdered spices.">
+<meta name="twitter:description" content="A Dash of Convenience, a Pinch of Delight: Grocery and Spice Made Right!.">
+     <?php
+    }else{
+        ?>
+
+<title> Super Foods | Spice up Your Kitchen with Flavorful Finds! </title> 
+       <link rel="canonical" href="https://www.superfood.store/"> 
+<!-- SEO -->
+<meta name="keywords" content="Online grocery shopping in Cameroon, Fresh food delivery in Cameroon, Buy groceries online in Cameroon, Best online grocery store in Cameroon, Local produce in Cameroon, Organic food delivery in Cameroon, Affordable groceries in Cameroon, Convenient online shopping in Cameroon, Spices and seasonings in Cameroon, Quick recipes for Cameroon cuisine, Farm-fresh ingredients in Cameroon, Healthy food options in Cameroon, Bulk buying in Cameroon, Special discounts for Cameroonians, Cameroon's top online grocery store, Wide selection of groceries in Cameroon, Recipe inspiration for Cameroon dishes, Customer reviews for online grocery stores in Cameroon, Fast and reliable grocery delivery in Cameroon, Fresh food in Cameroon at your doorstep.">
+<meta name="description" content="A Dash of Convenience, a Pinch of Delight: Grocery and Spice Made Right!">
+ <!-- SEO - Social -->
+<meta property="og:site_name" content="Super Foods ">
+<meta property="og:url" content="https://www.superfood.store/">
+<meta property="og:title" content="Super Foods">
+<meta property="og:type" content="website">
+<meta property="og:description" content="A Dash of Convenience, a Pinch of Delight: Grocery and Spice Made Right!.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Super Foods">
+<meta name="twitter:description" content="A Dash of Convenience, a Pinch of Delight: Grocery and Spice Made Right!.">
      <?php
     }
 ?>
@@ -134,11 +145,11 @@ if($cur_page == 'product'){
        </div>
 </div>
 <!-- logo -->
-<div class=" w-full h-full flex justify-center items-center">
+<div class="w-full h-full flex justify-center items-center">
    <div class="">
    <a href="index"> 
-      <!-- <img src="assets/images/logo.webp" alt="mmb" class="w-[200px] pt-4 mb-4"> -->
-        <p class="text-4xl lg:text-6xl lg:mt-6 logo-text">SUPER FOODS</p>
+      <img src="assets/images/icons/logo.png" alt="super foods logo" class="w-[150px] lg:w-[200px] pt-4 ml-[-10px]">
+   <!-- <p class="text-4xl lg:text-6xl lg:mt-6 logo-text">SUPER FOODS</p> -->
   </a>
 </div>
 </div>
@@ -206,9 +217,9 @@ if($cur_page == 'product'){
 
       <!-- mobile menu logo -->
       <div class="w-full  text-center mb-4">
-        <!-- <img src="images/logos/l5.png" alt="mmb" class="pt-4 mb-4"> -->
-        <a href="index" class="log" title="Super Foods">
-        <p style="font-size:1.5rem;" class="mt-4">SuperFoods</p>
+        <a href="index" class="log w-full flex justify-center items-center" title="Super Foods">
+        <!-- <p style="font-size:1.5rem;" class="mt-4">SuperFoods</p> -->
+        <img src="assets/images/icons/logo.png" alt="super foods logo" class="w-[150px] lg:w-[200px]">
      </a>
      <p class="text-xs">contact us : </p>
         <div class="flex justify-center items-center mb-2">

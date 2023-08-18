@@ -24,7 +24,7 @@
         </div>
          <!-- PROMO STATUS-->
          <div class="category_name absolute top-0 left-0 text-xs">
-            <div class="ca bg-[#0DA586] px-2 shadow-md text-white font-bold">
+            <div class="ca bg-[#FECE0A] px-2 shadow-md text-white font-bold">
                 <p>
         <?php
          if($promo == 0){
