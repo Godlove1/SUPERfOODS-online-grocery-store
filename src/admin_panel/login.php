@@ -2,9 +2,6 @@
 // database connection file
 include '../config/config.inc.php';
 
-// Start the session
-// session_start();
-
 // Check whether the Submit Button is Clicked or Not
 if (isset($_POST['login'])) {
     $username = $_POST['username'];
@@ -50,10 +47,12 @@ if (isset($_POST['login'])) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assets/css/output.css">
+    <link rel="icon" type="image/png" sizes="48x48" href="../assets/images/icons/maskable_icon_x48.png">
+ <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/icons/maskable_icon_x192.png">
     <title>Admin Login</title>
 </head>
 <body>
-<main class="w-full h-screen  flex justify-center items-center flex-col ">
+<main class="w-full h-screen overflow-hidden flex justify-center items-center flex-col ">
     <!-- error message for failed login/wrong password -->
     <?php
     if (isset($_SESSION['login'])) {
@@ -62,8 +61,8 @@ if (isset($_POST['login'])) {
     }
     ?>
     <!-- error message for failed login/wrong password -->
-    <div class="w-full max-w-xs mt-4 border rounded border-slate-300">
-        <form class="bg-white  rounded px-8 pt-6 pb-8 mb-4" method="POST">
+    <div class="w-full max-w-xs  border rounded border-slate-300">
+        <form class="bg-white  rounded-md p-8 mb-4" method="POST">
             <div class="mb-4">
                 <label class="block text-gray-700 text-sm  mb-2" for="username">
                     Username
@@ -76,14 +75,14 @@ if (isset($_POST['login'])) {
                 </label>
                 <input class="shadow appearance-none border border-slate-300  rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" name="password" type="password" placeholder="************">
             </div>
-            <div class="flex items-center justify-between">
-                <button class="bg-teal-500 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit" name="login">
+            <div class="w-full flex items-center justify-center">
+                <button class="bg-teal-500 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-1/2" type="submit" name="login">
                     Sign In
                 </button>
             </div>
         </form>
-        <p class="text-center text-gray-500 text-xs">
-            &copy;Anonymous 2022. All rights reserved.
+        <p class="text-center text-gray-500 text-xs p-2">
+            &copy;SuperFood <?php echo date('Y');?>. All rights reserved.
         </p>
     </div>
 </main>

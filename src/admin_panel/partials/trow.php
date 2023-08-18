@@ -63,7 +63,7 @@ while($row=mysqli_fetch_assoc($res))
                     ?>
                     </td>
   
-                      <td class="w-20">
+                      <td class="">
   <a href="update-prod?id=<?php echo $id; ?>" class="w-full text-center rounded bg-green-500 hover:bg-green-700 p-2 "><i class="fa-solid fa-pen-to-square text-xl text-white"></i></a>
   <a onclick="return confirm('Are you sure you want to delete <?php echo $title; ?>?');" href="delete?id=<?php echo $id; ?>&images=<?php echo $prod_imgs; ?>" class=" w-full text-center rounded bg-red-500 hover:bg-red-700 p-2"><i class="fa-solid fa-trash-can text-xl text-white"></i></a>
                       </td>
@@ -106,7 +106,7 @@ while($row=mysqli_fetch_assoc($res))
   <!--template-->
   <tr>
 
-                    <td class="w-10">
+                    <td class="w-5">
                     <?php echo $sn++; ?>
                     </td>
                     <td class="w-20">

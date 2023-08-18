@@ -115,8 +115,8 @@ foreach ($db->query($get_cats) as $cats) {
 
 <!-- table of products/customers -->
 
-<section class=" w-full flex justify-center items-center ">
-   <div class="w-full px-2 lg:w-1/2 ">
+<section class=" w-full flex justify-center items-center overflow-x-scroll">
+   <div class="w-full lg:w-2/3 ">
 
      <table id="example" class="display" style="width:100%">
         <thead>

@@ -13,7 +13,7 @@
     <!-- custom css -->
     <link rel="stylesheet" href="../assets/css/custom.css">
     <!-- ckeditor -->
-    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/icons/logo.png">
     <!-- wysiwyg editor -->
     <script src="https://cdn.tiny.cloud/1/g1zemnecrffm9foubaxwbrdcn4eefyegw09o0jq6z6m923xr/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
 
@@ -41,7 +41,8 @@ self.location='index?cat=' + val ;
     </div>
     
 <div>
-<p class="text-2xl font-bold"><a href="index">SuperFoods</a></p>
+<!-- <p class="text-2xl font-bold"><a href="index">SuperFoods</a></p> -->
+<img src="../assets/images/icons/logo.png" alt="logo" class="w-20">
 </div>
 
   
